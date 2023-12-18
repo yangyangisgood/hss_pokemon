@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "cubic";
+  src: url(./fonts/Cubic_11_1.010_R.ttf);
+}
+
+html,
+body,
+main,
+.soulmate,
+.content,
+.queContent,
+.result {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-family: "cubic";
+}
+
+body {
+  overflow: hidden;
+  margin: 0
+}
+
+.soulmate {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  width: 24rem;
+  height: 42rem;
+  margin: 0 auto;
+  background-image: url(./img/資產\ 7.png);
+  background-size: 27rem 29rem;
+  background-repeat: no-repeat;
+  background-position: -1.5rem 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content .top {
+  position: relative;
+  height: 30%;
+}
+
+.content .top .container {
+  background-image: url(./img/資產\ 17.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 11em;
+  width: 21em;
+  position: relative;
+  top: 2em;
+  /* border: 1px solid #000; */
+}
+
+.content .top .subtitle {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0 auto;
+  position: relative;
+  top: 34px;
+}
+
+.content .top .subtitle h2 {
+  font-size: 20px;
+}
+
+.content .top .title {
+  transform: rotate(-5deg);
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: -26px;
+  left: 20px;
+}
+
+.content .top .title img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 2em;
+  width: 2em;
+}
+
+.content .top .title h1 {
+  position: relative;
+  font-size: 1.8em;
+  /* transform: rotate(-5deg); */
+}
+
+.content .middle {
+  height: 40%;
+  width: 100%;
+}
+
+.content .middle img {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.content .middle .right img {
+  position: relative;
+  left: 10em;
+}
+
+.content .middle .left img:nth-child(2) {
+  position: relative;
+  right: 10em;
+  bottom: 2em;
+}
+
+.content .middle .left img:nth-child(3) {
+  position: relative;
+  right: 9em;
+  bottom: 3em;
+}
+
+.content .middle .left {
+  display: flex;
+  position: relative;
+  top: 4em;
+}
+
+
+.content .bottom {
+  background-image: url('./img/資產\ 9.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* background-position: bottom; */
+  position: relative;
+  bottom: 30px;
+  height: 14%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 1em;
+}
+
+.content .bottom h3 {
+  margin-top: 1.4em;
+  margin-left: 1.6em;
+}
+
+.content .bottom .start {
+  margin-top: 2.6em;
+  margin-right: 1.4em;
+  font-size: 1.2em;
+  opacity: 0;
+  animation: startBtn-anim 1s 1.4s infinite backwards;
+  cursor: pointer;
+}
+
+@keyframes startBtn-anim {
+  0% {
+    opacity: 0;
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Question Page Here */
+.queContent {
+  width: 24rem;
+  height: 42rem;
+  margin: 0 auto;
+  background-image: url('./img/quePage/資產\ 2.png');
+  /* background-size: 27rem 29rem; */
+  background-repeat: no-repeat;
+  /* background-position: -1.5rem 14rem; */
+}
+
+.queContent .box {
+  width: 22rem;
+  height: 36rem;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.queContent .box .que-container {
+  height: 14rem;
+  width: 20rem;
+  margin: 0.6em auto;
+  background-image: url(./img/quePage/資產\ 4.png);
+  background-size: 22rem 7rem;
+  background-repeat: no-repeat;
+  padding: 0.6em 1em;
+}
+
+.queContent .box .que-container h1 {
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.queContent .box .ans-container {
+  width: 20rem;
+  height: 14rem;
+  background-image: url('./img/quePage/資產\ 4.png');
+  background-size: 22rem 8rem;
+  background-repeat: no-repeat;
+  padding: 0.4em 1em;
+}
+
+.ansA,
+.ansB {
+  width: 20rem;
+  cursor: pointer;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: #fff;
+  opacity: 0;
+  animation: emerge-anim 1s 3s forwards;
+}
+
+@keyframes emerge-anim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: emerge-anim 2.5s forwards;
+}
+
+.result img {
+  width: 24rem;
+  height: 42rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.result div {
+  position: absolute;
+  width: 24rem;
+  height: 42rem;
+  margin: auto;
+}
+
+.result span {
+  position: relative;
+  top: 38.5rem;
+  left: 13rem;
+}
