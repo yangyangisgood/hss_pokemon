@@ -5,7 +5,7 @@ window.onload = function () {
   let nextQueBtn = document.querySelector('.nextQueBtn')
   let ans = document.querySelectorAll('.ans')
 
-  alert('簡于翔不准玩！')
+  // alert('簡于翔不准玩！')
   startBtn.addEventListener("click", () => {
     body.style.overflowY = "scroll";
     let isProcessing = true;
