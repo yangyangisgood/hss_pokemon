@@ -1,0 +1,79 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet" />
+  <title>測驗你的靈魂教授！</title>
+</head>
+
+<body>
+  <main>
+    <!-- <audio src="./lyric/Super Star.mp3" autoplay loop id="music"></audio> -->
+    <div class="soulmate">
+      <div class="content">
+        <div class="top">
+          <div class="container">
+            <div class="subtitle">
+              <h2>？？？</h2>
+              <h2>ＬＶ・ｍａｘ</h2>
+            </div>
+            <div class="title">
+              <img src="./img/資產 2.png" alt="">
+              <h1>測驗你的靈魂教授！</h1>
+            </div>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="right">
+            <img src="./img/資產 4.png" style="height: 6em; width: 14em;">
+          </div>
+          <div class="left">
+            <img src="./img/資產 4.png" style="height: 6em; width: 14em;">
+            <img src="./img/資產 5.png" style="height: 5em; width: 6em;">
+            <img src="./img/資產 6.png" style="height: 2em; width: 1em;">
+          </div>
+        </div>
+        <div class="bottom">
+          <h3 class="bottom-description"></h3>
+          <div class="start">
+            <span>start</span>
+            <span class="startBtn">▼</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+<!-- <script>
+  window.onload = function () {
+    setInterval("toggleSound()", 1);
+  }
+
+  function toggleSound() {
+    let music = document.querySelector("#music");
+    if (music.paused) {
+      music.paused = false;
+      music.play();
+    }
+  }
+</script> -->
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<script>
+  new TypeIt(".bottom-description", {
+    strings: "啊！野生的教授出現了",
+    speed: 100,
+    waitUntilVisible: true,
+    cursor: false,
+  }).go();
+</script>
+<script src="app.js" charset="UTF-8"></script>
+
+</html>
