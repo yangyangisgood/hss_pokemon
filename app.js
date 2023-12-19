@@ -5,7 +5,7 @@ window.onload = function () {
   let nextQueBtn = document.querySelector('.nextQueBtn')
   let ans = document.querySelectorAll('.ans')
 
-  // alert('封鎖過曾浚洋的人跟簡于翔不准玩！')
+  // alert('刪過曾浚洋好友的人不准玩！')
   startBtn.addEventListener("click", () => {
     body.style.overflowY = "scroll";
     let isProcessing = true;
@@ -24,50 +24,40 @@ window.onload = function () {
         que: "歡迎你來到真新鎮，大木博士詢問你喜歡：",
         ans1: "A. 個性溫和的妙蛙種子、傑尼龜",
         id1: "Q1A",
-        ans1Href: 2,
         ans2: "B. 個性獨特、別具風格的小火龍",
         id2: "Q1B",
-        ans2Href: 4,
       },
       {
         num: "Q2",
         que: "在冒險途中，你遇到了非常難纏的阿柏怪，但是你沒有勇氣挑戰牠。在這種時候，請問你會希望得到哪樣的鼓勵？",
         ans1: "A. 你要鼓起勇氣，向前邁進，把勇氣鍛鍊出來",
         id1: "Q2A",
-        ans1Href: 3,
         ans2: "B. 沒關係，盡力就好，不需要太勉強自己",
         id2: "Q2B",
-        ans2Href: 5,
       },
       {
         num: "Q3",
         que: "你跟傑尼龜正在迎接道館挑戰賽，但是對手非常厲害，你與傑尼龜已經快要撐不下去了，這時你想起了練習的經驗：",
         ans1: "A. 再強大的對手也會有弱點，魔鬼藏在細節裡",
         id1: "Q3A",
-        ans1Href: "AB",
         ans2: "B. 放棄就什麼都沒有了，奮力一搏吧，訓練家",
         id2: "Q3B",
-        ans2Href: "CD",
       },
       {
         num: "Q4",
         que: "在冒險途中，你得到了一次跟小火龍進行深度交流的機會，你覺得在這次的交流中，小火龍的性格可能會偏向：",
         ans1: "A. 神秘、難以捉摸",
         id1: "Q4A",
-        ans1Href: "IJ",
         ans2: "B. 激動、具有感染力",
         id2: "Q4B",
-        ans2Href: "KL",
       },
       {
         num: "Q5",
         que: "前往道館挑戰賽的途中，你跟妙蛙種子一起經歷了許多艱難的訓練，你們一起躺臥在星空之下思索未來。這時，有道聲音傳到你心底：",
         ans1: "A. 休息一下，沒關係的，你已經很努力！",
         id1: "Q5A",
-        ans1Href: "EF",
         ans2: "B. 做你想做的就好，我們永遠支持你！",
         id2: "Q5B",
-        ans2Href: "GH",
       }
     ]
 
