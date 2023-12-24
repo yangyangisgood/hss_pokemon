@@ -5,7 +5,6 @@ window.onload = function () {
   let nextQueBtn = document.querySelector('.nextQueBtn')
   let ans = document.querySelectorAll('.ans')
 
-  // alert('刪過曾浚洋好友的人不准玩！')
   startBtn.addEventListener("click", () => {
     body.style.overflowY = "scroll";
     let isProcessing = true;
@@ -58,7 +57,7 @@ window.onload = function () {
         id1: "Q5A",
         ans2: "B. 做你想做的就好，我們永遠支持你！",
         id2: "Q5B",
-      }
+      },
     ]
 
     function typing(typeString) {
