@@ -5,7 +5,6 @@ window.onload = function () {
   let nextQueBtn = document.querySelector('.nextQueBtn')
   let ans = document.querySelectorAll('.ans')
 
-
   startBtn.addEventListener("click", () => {
     body.style.overflowY = "scroll";
     let isProcessing = true;
@@ -24,51 +23,41 @@ window.onload = function () {
         que: "歡迎你來到真新鎮，大木博士詢問你喜歡：",
         ans1: "A. 個性溫和的妙蛙種子、傑尼龜",
         id1: "Q1A",
-        ans1Href: 2,
         ans2: "B. 個性獨特、別具風格的小火龍",
         id2: "Q1B",
-        ans2Href: 4,
       },
       {
         num: "Q2",
         que: "在冒險途中，你遇到了非常難纏的阿柏怪，但是你沒有勇氣挑戰牠。在這種時候，請問你會希望得到哪樣的鼓勵？",
         ans1: "A. 你要鼓起勇氣，向前邁進，把勇氣鍛鍊出來",
         id1: "Q2A",
-        ans1Href: 3,
         ans2: "B. 沒關係，盡力就好，不需要太勉強自己",
         id2: "Q2B",
-        ans2Href: 5,
       },
       {
         num: "Q3",
         que: "你跟傑尼龜正在迎接道館挑戰賽，但是對手非常厲害，你與傑尼龜已經快要撐不下去了，這時你想起了練習的經驗：",
         ans1: "A. 再強大的對手也會有弱點，魔鬼藏在細節裡",
         id1: "Q3A",
-        ans1Href: "AB",
         ans2: "B. 放棄就什麼都沒有了，奮力一搏吧，訓練家",
         id2: "Q3B",
-        ans2Href: "CD",
       },
       {
         num: "Q4",
         que: "在冒險途中，你得到了一次跟小火龍進行深度交流的機會，你覺得在這次的交流中，小火龍的性格可能會偏向：",
         ans1: "A. 神秘、難以捉摸",
         id1: "Q4A",
-        ans1Href: "IJ",
         ans2: "B. 激動、具有感染力",
         id2: "Q4B",
-        ans2Href: "KL",
       },
       {
         num: "Q5",
         que: "前往道館挑戰賽的途中，你跟妙蛙種子一起經歷了許多艱難的訓練，你們一起躺臥在星空之下思索未來。這時，有道聲音傳到你心底：",
         ans1: "A. 休息一下，沒關係的，你已經很努力！",
         id1: "Q5A",
-        ans1Href: "EF",
         ans2: "B. 做你想做的就好，我們永遠支持你！",
         id2: "Q5B",
-        ans2Href: "GH",
-      }
+      },
     ]
 
     function typing(typeString) {
@@ -160,10 +149,10 @@ window.onload = function () {
                     body.innerHTML = `
                     <audio src="./lyric/你是被抹去的那一段風景.mp3" autoplay id="music"></audio>
                     <div class="result">
-                      <img src="./img/result/cho-yin.png" alt="">  
                       <div>
+                        <img src="./img/result/cho-yin.png" alt="">
                         <span>長按可以儲存照片ㄛ！</span>
-                      </div>  
+                      </div>
                     </div>
                     `
                   }, 600)
@@ -178,8 +167,8 @@ window.onload = function () {
                     body.innerHTML = `
                     <audio src="./lyric/燕尾蝶.mp3" autoplay id="music"></audio>
                     <div class="result">
-                      <img src="./img/result/jin-wen.png" alt="">
                       <div>
+                        <img src="./img/result/jin-wen.png" alt="">
                         <span>長按可以儲存照片ㄛ！</span>
                       </div>  
                     </div>
@@ -216,8 +205,8 @@ window.onload = function () {
                     body.innerHTML = `
                     <audio src="./lyric/冬天裡的一把火.mp3" autoplay id="music"></audio>
                     <div class="result">
-                      <img src="./img/result/rui-hua.png" alt="">
                       <div>
+                        <img src="./img/result/rui-hua.png" alt="">
                         <span>長按可以儲存照片ㄛ！</span>
                       </div>  
                     </div>
@@ -234,8 +223,8 @@ window.onload = function () {
                     body.innerHTML = `
                     <audio src="./lyric/頭號甜心.mp3" autoplay id="music"></audio>
                     <div class="result">
-                      <img src="./img/result/yuan-liang.png" alt="">
                       <div>
+                        <img src="./img/result/yuan-liang.png" alt="">
                         <span>長按可以儲存照片ㄛ！</span>
                       </div>  
                     </div>
@@ -290,8 +279,8 @@ window.onload = function () {
                     body.innerHTML = `
                     <audio src="./lyric/追光者.mp3" autoplay id="music"></audio>
                     <div class="result">
-                      <img src="./img/result/chon-ip.png" alt="">
                       <div>
+                        <img src="./img/result/chon-ip.png" alt="">
                         <span>長按可以儲存照片ㄛ！</span>
                       </div>  
                     </div>
@@ -308,8 +297,8 @@ window.onload = function () {
                     body.innerHTML = `
                     <audio src="./lyric/PLAY我呸.mp3" autoplay id="music"></audio>
                     <div class="result">
-                      <img src="./img/result/gui-yun.png" alt="">
                       <div>
+                        <img src="./img/result/gui-yun.png" alt="">
                         <span>長按可以儲存照片ㄛ！</span>
                       </div>  
                     </div>
@@ -345,8 +334,8 @@ window.onload = function () {
                     body.innerHTML = `
                     <audio src="./lyric/天使.mp3" autoplay id="music"></audio>
                     <div class="result">
-                      <img src="./img/result/wen-lan.png" alt="">
                       <div>
+                        <img src="./img/result/wen-lan.png" alt="">
                         <span>長按可以儲存照片ㄛ！</span>
                       </div>  
                     </div>
@@ -363,8 +352,8 @@ window.onload = function () {
                     body.innerHTML = `
                     <audio src="./lyric/姊妹.mp3" autoplay id="music"></audio>
                     <div class="result">
-                      <img src="./img/result/yi-jie.png" alt="">
                       <div>
+                        <img src="./img/result/yi-jie.png" alt="">
                         <span>長按可以儲存照片ㄛ！</span>
                       </div>  
                     </div>
@@ -420,10 +409,10 @@ window.onload = function () {
                 body.innerHTML = `
                 <audio src="./lyric/你是我的眼.mp3" autoplay id="music"></audio>
                 <div class="result">
-                  <img src="./img/result/wang-shan.png" alt="">
                   <div>
-                        <span>長按可以儲存照片ㄛ！</span>
-                      </div>  
+                    <img src="./img/result/wang-shan.png" alt="">
+                    <span>長按可以儲存照片ㄛ！</span>
+                  </div>  
                 </div>
                 `
               }, 600)
@@ -438,10 +427,10 @@ window.onload = function () {
                 body.innerHTML = `
                 <audio src="./lyric/Super Star.mp3" autoplay id="music"></audio>
                 <div class="result">
-                  <img src="./img/result/yin-gui.png" alt="">
                   <div>
-                        <span>長按可以儲存照片ㄛ！</span>
-                      </div>  
+                    <img src="./img/result/yin-gui.png" alt="">
+                    <span>長按可以儲存照片ㄛ！</span>
+                  </div>  
                 </div>
                 `
               }, 600)
@@ -476,8 +465,8 @@ window.onload = function () {
                 body.innerHTML = `
                 <audio src="./lyric/妳是我的花朵.mp3" autoplay id="music"></audio>
                     <div class="result">
-                      <img src="./img/result/JT.png" alt="">
                       <div>
+                        <img src="./img/result/JT.png" alt="">
                         <span>長按可以儲存照片ㄛ！</span>
                       </div>  
                     </div>
@@ -494,8 +483,8 @@ window.onload = function () {
                 body.innerHTML = `
                 <audio src="./lyric/妳是我的Wifi.mp3" autoplay id="music"></audio>
                     <div class="result">
-                      <img src="./img/result/how-z.png" alt="">
                       <div>
+                        <img src="./img/result/how-z.png" alt="">
                         <span>長按可以儲存照片ㄛ！</span>
                       </div>  
                     </div>
