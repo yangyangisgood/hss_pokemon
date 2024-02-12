@@ -209,6 +209,19 @@ body {
   line-height: 1.4em;
 }
 
+#Q2-que-container,
+#Q3-que-container,
+#Q4-que-container,
+#Q5-que-container {
+  background-size: 22rem 10rem;
+}
+
+#Q2-ans-container,
+#Q3-ans-container,
+#Q5-ans-container {
+  background-size: 22rem 11rem;
+}
+
 .queContent .box .ans-container {
   width: 20rem;
   height: 14rem;
